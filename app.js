@@ -3,6 +3,9 @@ const app = express()
 const connectDB = require('./db/connect')
 const router = require('./routes/register')
 require('dotenv').config()
+var cors = require('cors')
+
+app.use(cors())
 
 //middlewares
 app.use(express.json())
