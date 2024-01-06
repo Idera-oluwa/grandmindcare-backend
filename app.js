@@ -8,7 +8,7 @@ const fileUpload = require('express-fileupload');
 const cloudinary = require('cloudinary').v2;
 var cors = require('cors')
 
-app.use(cors())
+app.use(cors({credentials: true}))
 cloudinary.config({ 
     cloud_name: 'ddkmv4ol1', 
     api_key: '939852836874738', 
